@@ -1,0 +1,275 @@
+/*
+Theme Name: RHCP - World Tribute
+Theme URI: none
+Description: Tema deselvolvido por Antonio Baiense
+Author: Antonio Baiense
+Author: http://antoniobaiense.com
+Version:1.0
+*/
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------------------------------------- VÍDEO */
+
+body { 
+    margin: 0; background: #000;
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../video/polina.jpg') no-repeat; background-size: cover;  -webkit-transition: 1s opacity; transition: 1s opacity; 
+}
+
+div { 
+}
+
+h1 { 
+    font-size: 3rem; 
+    text-transform: uppercase; 
+    margin-top: 0; 
+    letter-spacing: .3rem; 
+}
+
+a { 
+    display: inline-block; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: .5rem; 
+    -webkit-transition: .6s background; 
+    transition: .6s background; 
+}
+
+a:hover { 
+    background: rgba(0,0,0,0.9); 
+}
+
+.stopfade { 
+    opacity: .5; 
+}
+
+
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media all and (max-device-width: 800px) {
+  body { background: url("../video/polina.jpg") #000 no-repeat center center fixed; background-size: cover; }
+  #bgvid, #polina button { display: none; }
+  div{width:70%;} 
+}
+
+/* ----------------------------------------------------- MENU - */
+
+#menu{
+	position:fixed;
+	background-color:#a91f5f;
+	height:100%;
+	z-index:10;
+	width:300px;
+	color:#bbb;
+	top:0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	opacity:1;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#menu ul{
+	list-style:none;
+	margin-top:0;
+	padding:0
+}
+#menu ul li{
+    border-top: 1px solid #b91c65;
+    border-bottom: 1px solid #980549;
+}
+
+#menu ul li:last-child{
+    border-top: 1px solid #b91c65;
+    border-bottom: none;
+}
+
+#menu ul li:first-child{
+    border-top: none;
+    border-bottom: 1px solid #980549;
+}
+
+#menu>ul>li>a{border-left:4px solid rgba(255, 255, 255, 0);}
+#menu ul li a{
+	color:white;
+	font-size:16px;
+	display:block;
+	padding:13px 0 13px 7px;
+	text-decoration:none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-weight: 600;
+}
+#menu ul a i{
+	margin-right:10px;
+	font-size: 18px;
+	margin-top: 3px;
+	width: 20px;
+}
+#menu ul a i[class*='fa-caret']{float: right;}
+#menu ul a:hover,#menu ul a.active{
+	background-color:#8f0d4a;
+}
+
+	/* Submenu */
+	#menu ul li a.active+ul{display:block}
+	#menu ul li ul{margin-top: 0;display: none;}
+	#menu ul li ul li{border-bottom: none;
+            border-top: 1px solid #383838;
+            border-bottom: 1px solid #191919;}
+
+
+    #menu ul li ul li:last-child{
+        border-top: 1px solid #383838;
+        border-bottom: none;
+    }
+
+    #menu ul li ul li:first-child{
+        border-top: none;
+        border-bottom: 1px solid #191919;
+    }
+
+
+	#menu ul li ul li a{padding-left: 30px;
+        background-color: #252525;
+
+}
+	#menu ul li ul li a:hover{
+		background-color:#191919;
+	}
+	/* /Submenu */
+
+
+/* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+.left{left:-300px;}
+.show{left:0;}
+
+#showmenu{
+	margin-left:calc(100% + 20px);
+    margin-top: 20px;
+	position:absolute;
+	top:0;
+	padding:7px 10px 7px 10px;
+	font-size:1.3em;
+	color:white;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+    border-radius: 50%;
+    background-color: rgba(169,31,95,1.0);
+}
+
+#container{padding: 50px;}
+
+/* ----------------------------------------------------------SITE*/
+
+.pause{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+}
+
+.areaLogo{
+    height: 185px;
+    width: 100%;
+    background-color: white;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid white;
+    position: absolute;
+    margin: 0 0 0 50px;
+}
+
+.logoSite{
+    margin: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
