@@ -1,18 +1,17 @@
 <!doctype html>
 <html>
     <head>
-        <title>the new code - FullScreen HTML5 Video In Pure CSS</title>
+        <title>RHCP By Organic</title>
         <link rel="stylesheet" href="css/template.css" type="text/css" />
         <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
-        
-
         <meta charset=utf-8>
     </head>
     <body>
-        <video autoplay loop poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid">
-            <source src="video/polina.webm" type="video/webm">
-            <source src="video/polina.mp4" type="video/mp4">s            
+        <div class="bg-grade"></div> 
+        <video autoplay loop poster="video/rhcp.jpg" id="bgvid">
+            <source src="video/rhcp.mp4" type="video/mp4">
         </video>
+        
         
         <div class="pause">
             <svg id="pause" height="40px" version="1.1" viewBox="0 0 20 20" width="40px"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#fff" id="Icons-AV" transform="translate(-42.000000, -85.000000)"><g id="pause-circle-outline" transform="translate(42.000000, 85.000000)"><path d="M7,14 L9,14 L9,6 L7,6 L7,14 L7,14 Z M10,0 C4.5,0 0,4.5 0,10 C0,15.5 4.5,20 10,20 C15.5,20 20,15.5 20,10 C20,4.5 15.5,0 10,0 L10,0 Z M10,18 C5.6,18 2,14.4 2,10 C2,5.6 5.6,2 10,2 C14.4,2 18,5.6 18,10 C18,14.4 14.4,18 10,18 L10,18 Z M11,14 L13,14 L13,6 L11,6 L11,14 L11,14 Z" id="Shape"/></g></g></g></svg>
@@ -47,7 +46,7 @@
         <!-- FIM - MENU VERTICAL -->
 
         <!-- CONTEUDO -->
-        <div id="container">
+        <div id="conteudo" class="left show">
           <h2>Hello World!</h2>
         </div>
 
@@ -58,7 +57,7 @@
         <script>
             $("#showmenu").click(function(e){
 			e.preventDefault();
-			$("#menu").toggleClass("show");
+			$("#menu, #conteudo").toggleClass("show");
 		});
 		$("#menu a").click(function(event){
 			if($(this).next('ul').length){
