@@ -207,12 +207,11 @@ a:hover {
 
 
 /* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
-.left{
+.left-menu{
 	margin-left:-16%;
 }
-.right{
-	margin-right: 16%;
-	width: calc(100% + 16%);
+.right-menu{
+	margin-right: 8%;
 }
 .show{margin:0;}
 
@@ -235,8 +234,8 @@ a:hover {
 #conteudo{
     position: absolute;
     right: 0;
-    background-color: white;
-    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
     width: 84%;
     color: #bbb;
     /* margin: 50px; */
@@ -291,17 +290,16 @@ a:hover {
 	position: fixed;
 }
 
+/* IFRAME CONTADOR*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.iframe-style{
+    padding: 15px;
+    width: 230px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.75);
+}
