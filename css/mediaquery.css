@@ -1,0 +1,28 @@
+@media (max-width: 720px) {
+	.menu-tablet{
+		display: block;
+	}
+	.menu-pc{
+		display: none;
+	}
+	#conteudo{
+		width: 100%;
+	}
+
+	.iframe-style{
+		width: 194px; 
+	}
+}
+
+@media (min-width: 721px) {
+	.menu-tablet{
+		display: none;
+	}
+	
+}
+
+@media (max-width: 904px){
+	.iframe-style{ 
+		width:194px;
+	}
+}

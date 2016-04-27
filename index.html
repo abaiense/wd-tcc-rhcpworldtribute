@@ -34,32 +34,75 @@
             <svg id="pause" height="40px" version="1.1" viewBox="0 0 20 20" width="40px"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#fff" id="Icons-AV" transform="translate(-42.000000, -85.000000)"><g id="pause-circle-outline" transform="translate(42.000000, 85.000000)"><path d="M7,14 L9,14 L9,6 L7,6 L7,14 L7,14 Z M10,0 C4.5,0 0,4.5 0,10 C0,15.5 4.5,20 10,20 C15.5,20 20,15.5 20,10 C20,4.5 15.5,0 10,0 L10,0 Z M10,18 C5.6,18 2,14.4 2,10 C2,5.6 5.6,2 10,2 C14.4,2 18,5.6 18,10 C18,14.4 14.4,18 10,18 L10,18 Z M11,14 L13,14 L13,6 L11,6 L11,14 L11,14 Z" id="Shape"/></g></g></g></svg>
         </div>     
         
-        <!-- INICIO - MENU VERTICAL -->
-        <nav id="menu" class="left-menu show">
-            <div class="areaLogo">
-                <img src="img/logo.png" class="logoSite">
+    <!-- Fixed navbar -->
+    <div class="menu-tablet">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
             </div>
-            <div class="arrow-down"></div>
-          <ul>
-            <li><a href="#" class="active"><i class=""></i>Home</a></li>
-            <li><a href="#"><i class=""></i>Agenda de Shows</a></li>
-            <li>
-              <a href="#"><i class=""></i>Galeria<i class="fa fa-caret-down"></i></a>
-              <ul>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="#">Vídeos</a></li>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-            <li><a href="#"><i class=""></i>Repertório</a></li>
-            <li><a href="#"><i class=""></i>Blog</a></li>
-            <li><a href="#"><i class=""></i>Links</a></li>
-            <li><a href="#"><i class=""></i>Loja</a></li>
-            <li><a href="#"><i class=""></i>Contato e Agendamento</a></li>
-          </ul>
-          <a href="#" id="showmenu">
-            <i class="fa fa-bars"></i>
-          </a>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../navbar/">Default</a></li>
+                <li><a href="../navbar-static-top/">Static top</a></li>
+                <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </nav>
+    </div>
+
+        <!-- INICIO - MENU VERTICAL -->
+        <div class="menu-pc">
+            <nav id="menu" class="left-menu show">
+                <div class="areaLogo">
+                    <img src="img/logo.png" class="logoSite">
+                </div>
+                <div class="arrow-down"></div>
+              <ul>
+                <li><a href="#" class="active"><i class=""></i>Home</a></li>
+                <li><a href="#"><i class=""></i>Agenda de Shows</a></li>
+                <li>
+                  <a href="#"><i class=""></i>Galeria<i class="fa fa-caret-down"></i></a>
+                  <ul>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><i class=""></i>Repertório</a></li>
+                <li><a href="#"><i class=""></i>Blog</a></li>
+                <li><a href="#"><i class=""></i>Links</a></li>
+                <li><a href="#"><i class=""></i>Loja</a></li>
+                <li><a href="#"><i class=""></i>Contato e Agendamento</a></li>
+              </ul>
+              <a href="#" id="showmenu">
+                <i class="fa fa-bars"></i>
+              </a>
+            </nav>
+        </div>
         <!-- FIM - MENU VERTICAL -->
 
         <!-- CONTEUDO -->
@@ -75,13 +118,32 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <div class="container">
-            <div class="carousel-caption">
-                <h1>Próximo Show</h1>
-                <h1 class="subtitle-carousel">Rio de Janeiro</h1>
+            <div class="col-sm-12">
+                <div class="carousel-caption">
+                    <h1>Próximo Show</h1>
+                    <h1 class="subtitle-carousel">Rio de Janeiro</h1>
 
-                <div class="iframe-style">
+                    <div class="iframe-style">
 
-                    <div data-countdown="2016/08/01"></div>
+            <div class="time-num">
+                <div class="countdown-title">95</div> 
+                <div class="countdown-subtitle">dias</div>
+            </div>
+            <div class="time-num">
+                <div class="countdown-title">12</div> 
+                <div class="countdown-subtitle">horas</div>
+            </div>
+            <div class="time-num">
+                <div class="countdown-title">35</div> 
+                <div class="countdown-subtitle">minutos</div>
+            </div>
+            <div class="time-num">
+                <div class="countdown-title">15</div> 
+                <div class="countdown-subtitle">segundos</div>
+            </div>
+
+                        <!--<div data-countdown="2016/08/01"></div>-->
+                    </div>
                 </div>
             </div>
           </div>
