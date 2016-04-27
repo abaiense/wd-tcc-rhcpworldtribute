@@ -1,4 +1,4 @@
-@media (max-width: 720px) {
+@media (max-width: 780px) {
 	.menu-tablet{
 		display: block;
 	}
@@ -14,7 +14,7 @@
 	}
 }
 
-@media (min-width: 721px) {
+@media (min-width: 781px) {
 	.menu-tablet{
 		display: none;
 	}
@@ -25,4 +25,18 @@
 	.iframe-style{ 
 		width:194px;
 	}
+}
+
+/*-- conteudo slider --*/
+
+@media (max-width: 904px){
+	.slider-1{
+		margin-top: 150px
+	}
+}
+
+@media (min-width: 905px) {
+	.slider-1{
+		margin-top: 190px
+	}	
 }
